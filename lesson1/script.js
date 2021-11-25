@@ -25,7 +25,7 @@ const lesson = calcCash(data.cash);
 
 const makeBusiness = (director, teacher, allModule, gang, course) => {
 	teacher = teacher || 'Максим';
-	const sumTech = data.react.concat(data.add, 'и другие');
+	const sumTech = `${data.react.join(', ')} и другие`
 	console.log(
 `Стартуем новый курс: "${course}". Владелец: ${director}, преподаватель: ${teacher}. Всего уроков: ${allModule}.
 Команда Академии: ${gang}
