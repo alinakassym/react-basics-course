@@ -12,7 +12,7 @@ function App() {
       <Main />
       <FeaturesSection />
       <ContactsSection />
-      <Footer />
+      <Footer madeByName={'Alina'} link={'https://github.com/alinakassym'} />
     </div>
   );
 }

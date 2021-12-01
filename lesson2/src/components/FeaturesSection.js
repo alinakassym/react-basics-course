@@ -1,34 +1,41 @@
+import { FeatureCard } from "./FeatureCard";
+
 export const FeaturesSection = () => {
+    const featuresList = [
+        {
+            imgFileName: '1.svg',
+            text: 'Первое целевое преимущество'
+        },
+        {
+            imgFileName: '2.svg',
+            text: 'Второе целевое преимущество'
+        },
+        {
+            imgFileName: '3.svg',
+            text: 'Третье целевое преимущество'
+        },
+        {
+            imgFileName: '4.svg',
+            text: 'Четвертое целевое преимущество'
+        },
+    ];
     return (
-        <section class="features">
-            <div class="wrapper">
-                <div class="features-wrapper">
-                    <h2 class="features-head">Уникальный заголовок для преимущества компании</h2>
-                    <div class="features-subhead">О нас</div>
-                    <div class="features-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+        <section className="features">
+            <div className="wrapper">
+                <div className="features-wrapper">
+                    <h2 className="features-head">Уникальный заголовок для преимущества компании</h2>
+                    <div className="features-subhead">О нас</div>
+                    <div className="features-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
                                                     сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему
                                                     оратору отточить.
                     </div>
-                    <div class="features-slider">
-                        <div class="features-slider_items">
-                            <div class="features-slider_item">
-                                <div class="features-img" style={{backgroundImage: `url(./images/1.svg)`}}></div>
-                                <div class="features-feature">Первое целевое преимущество</div>
-                            </div>
-                            <div class="features-slider_item">
-                                <div class="features-img" style={{backgroundImage: `url(./images/2.svg)`}}></div>
-                                <div class="features-feature">Второе целевое преимущество</div>
-                            </div>
-                            <div class="features-slider_item">
-                                <div class="features-img" style={{backgroundImage: `url(./images/3.svg)`}}></div>
-                                <div class="features-feature">Третье целевое преимущество</div>
-                            </div>
-                            <div class="features-slider_item">
-                                <div class="features-img" style={{backgroundImage: `url(./images/4.svg)`}}></div>
-                                <div class="features-feature">Четвертое целевое преимущество</div>
-                            </div>
+                    <div className="features-slider">
+                        <div className="features-slider_items">
+                            {featuresList.map((item, index) => (
+                                <FeatureCard img={item.imgFileName} text={item.text} />
+                            ))}
                         </div>
-                        <button class="features-slider-arrow features-slider-prev">
+                        <button className="features-slider-arrow features-slider-prev">
                             <svg width="9" height="16"
                                     xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -36,7 +43,7 @@ export const FeaturesSection = () => {
                                 </path>
                             </svg>
                         </button>
-                        <button class="features-slider-arrow features-slider-next">
+                        <button className="features-slider-arrow features-slider-next">
                             <svg width="9"
                                     height="16" xmlns="http://www.w3.org/2000/svg">
                                 <path
