@@ -164,7 +164,7 @@ template, [hidden] {
 
 @font-face {
 	font-family: 'Roboto';
-	src: local("Roboto"), local("Roboto-Regular"), url("./fonts/Roboto.woff2") format("woff2"), url("./fonts/Roboto.woff") format("woff"), url("./fonts/Roboto.ttf") format("truetype");
+	src: local("Roboto"), local("Roboto-Regular"), url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff"), url("../fonts/Roboto.ttf") format("truetype");
 	font-display: swap;
 	font-weight: 400;
 	font-style: normal;
@@ -172,7 +172,7 @@ template, [hidden] {
 
 @font-face {
 	font-family: 'Roboto';
-	src: local("Roboto Medium"), local("Roboto-Medium"), url("./fonts/Robotomedium.woff2") format("woff2"), url("./fonts/Robotomedium.woff") format("woff"), url("./fonts/Robotomedium.ttf") format("truetype");
+	src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/Robotomedium.woff2") format("woff2"), url("../fonts/Robotomedium.woff") format("woff"), url("../fonts/Robotomedium.ttf") format("truetype");
 	font-display: swap;
 	font-weight: 500;
 	font-style: normal;
@@ -180,7 +180,7 @@ template, [hidden] {
 
 @font-face {
 	font-family: 'Roboto';
-	src: local("Roboto Black"), local("Roboto-Black"), url("./fonts/Robotoblack.woff2") format("woff2"), url("./fonts/Robotoblack.woff") format("woff"), url("./fonts/Robotoblack.ttf") format("truetype");
+	src: local("Roboto Black"), local("Roboto-Black"), url("../fonts/Robotoblack.woff2") format("woff2"), url("../fonts/Robotoblack.woff") format("woff"), url("../fonts/Robotoblack.ttf") format("truetype");
 	font-display: swap;
 	font-weight: 900;
 	font-style: normal;
@@ -284,7 +284,7 @@ header {
 }
 
 .header-logo {
-	background-image: url(./images/logo.svg);
+	background-image: url(../images/logo.svg);
 	min-width: 30px;
 	min-height: 30px;
 	background-repeat: no-repeat;
@@ -292,7 +292,7 @@ header {
 }
 
 .header-phone {
-	background-image: url(./images/phone.svg);
+	background-image: url(../images/phone.svg);
 	min-width: 24px;
 	min-height: 24px;
 	background-repeat: no-repeat;
@@ -374,7 +374,7 @@ header {
 
 main {
 	position: relative;
-	background: #E6E3DE url(./images/main-bg-600.webp) no-repeat top left;
+	background: #E6E3DE url(../images/main-bg-600.webp) no-repeat top left;
 	background-size: cover;
 	z-index: 1;
 	padding: 110px 0 60px;
@@ -404,13 +404,13 @@ main:before {
 
 @media (min-width: 576px) {
 	main {
-		background: #E6E3DE url(./images/main-bg-1024.webp) no-repeat top left;
+		background: #E6E3DE url(../images/main-bg-1024.webp) no-repeat top left;
 	}
 }
 
 @media (min-width: 992px) {
 	main {
-		background: #E6E3DE url(./images/main-bg-1600.webp) no-repeat top left;
+		background: #E6E3DE url(../images/main-bg-1600.webp) no-repeat top left;
 	}
 }
 
@@ -449,19 +449,19 @@ main:before {
 }
 
 .no-webp main {
-	background: #E6E3DE url(./images/main-bg-600.jpg) no-repeat top left;
+	background: #E6E3DE url(../images/main-bg-600.jpg) no-repeat top left;
 	background-size: cover;
 }
 
 @media (min-width: 576px) {
 	.no-webp main {
-		background: #E6E3DE url(./images/main-bg-1024.jpg) no-repeat top left;
+		background: #E6E3DE url(../images/main-bg-1024.jpg) no-repeat top left;
 	}
 }
 
 @media (min-width: 992px) {
 	.no-webp main {
-		background: #E6E3DE url(./images/main-bg-1600.jpg) no-repeat top left;
+		background: #E6E3DE url(../images/main-bg-1600.jpg) no-repeat top left;
 	}
 }
 
@@ -790,7 +790,7 @@ main:before {
 
 .contact {
 	position: relative;
-	background: #E6E3DE url(./images/contact-bg-600.webp) no-repeat center;
+	background: #E6E3DE url(../images/contact-bg-600.webp) no-repeat center;
 	background-size: cover;
 	z-index: 1;
 	display: -webkit-box;
@@ -820,14 +820,14 @@ main:before {
 
 @media (min-width: 576px) {
 	.contact {
-		background: #E6E3DE url(./images/contact-bg-1024.webp) no-repeat top left;
+		background: #E6E3DE url(../images/contact-bg-1024.webp) no-repeat top left;
 		background-size: cover;
 	}
 }
 
 @media (min-width: 992px) {
 	.contact {
-		background: #E6E3DE url(./images/contact-bg-1600.webp) no-repeat top left;
+		background: #E6E3DE url(../images/contact-bg-1600.webp) no-repeat top left;
 		background-size: cover;
 	}
 }
@@ -950,19 +950,19 @@ main:before {
 }
 
 .no-webp .contact, .no-js .contact {
-	background: #E6E3DE url(./images/contact-bg-600.jpg) no-repeat top left;
+	background: #E6E3DE url(../images/contact-bg-600.jpg) no-repeat top left;
 }
 
 @media (min-width: 576px) {
 	.no-webp .contact, .no-js .contact {
-		background: #E6E3DE url(./images/contact-bg-1024.jpg) no-repeat top left;
+		background: #E6E3DE url(../images/contact-bg-1024.jpg) no-repeat top left;
 		background-size: cover;
 	}
 }
 
 @media (min-width: 992px) {
 	.no-webp .contact, .no-js .contact {
-		background: #E6E3DE url(./images/contact-bg-1600.jpg) no-repeat top left;
+		background: #E6E3DE url(../images/contact-bg-1600.jpg) no-repeat top left;
 		background-size: cover;
 	}
 }
@@ -1106,7 +1106,7 @@ footer {
 
 .footer-logo {
 	margin-left: 16px;
-	background-image: url(./images/logo.svg);
+	background-image: url(../images/logo.svg);
 	min-width: 30px;
 	min-height: 30px;
 	background-repeat: no-repeat;
@@ -1131,7 +1131,7 @@ footer {
 
 .footer-phone {
 	margin-right: 16px;
-	background-image: url(./images/phone.svg);
+	background-image: url(../images/phone.svg);
 	min-width: 24px;
 	min-height: 24px;
 	background-repeat: no-repeat;
@@ -1172,7 +1172,7 @@ footer {
 }
 
 .footer-websurfer_logo {
-	background-image: url(./images/logo-ws.svg);
+	background-image: url(../images/logo-ws.svg);
 	margin-left: 8px;
 	min-width: 120px;
 	min-height: 18px;
