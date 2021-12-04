@@ -39,17 +39,18 @@ const Item = styled.li`
     }
 `;
 
-export const ListItem = ({itemList}) => {
+export const ListItem = ({itemList, setOpenItem}) => {
     return (
         <List>
             {itemList.map((el, index) => (
                 <Item
                     key={index}
                     img={el.img}
+                    onClick={() => setOpenItem(el)}
                 >
                     <p>{el.name}</p>
                     <p>{el.price.toLocaleString('ru-KZ', 
-                    {style: 'currency', currency: 'KZT'})}</p>
+                    {style: 'currency', currency: 'KZT', maximumFractionDigits: 0})}</p>
                 </Item>
             ))}
         </List>

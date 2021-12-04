@@ -19,17 +19,17 @@ const Banner = styled.div`
     background-size: cover;
 `;
 
-export const Menu = () => {
+export const Menu = ({setOpenItem}) => {
     return (
         <MenuStyled>
             <Banner img={'./banner.png'}/>
             <Section>
                 <h2>Burgers</h2>
-                <ListItem itemList={dbMenu.burger} />
+                <ListItem setOpenItem={setOpenItem} itemList={dbMenu.burger} />
             </Section>
             <Section>
                 <h2>Other</h2>
-                <ListItem itemList={dbMenu.other} />
+                <ListItem setOpenItem={setOpenItem} itemList={dbMenu.other} />
             </Section>
         </MenuStyled>
     )
