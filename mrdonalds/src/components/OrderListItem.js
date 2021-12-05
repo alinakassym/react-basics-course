@@ -30,12 +30,14 @@ const ItemPrice = styled.span`
     text-align: right;
 `;
 
-export const OrderListItem = () => {
+export const OrderListItem = ({order}) => {
     return (
         <OrderItemStyled>
-            <ItemName>JS Burger</ItemName>
-            <span>2</span>
-            <ItemPrice>7500</ItemPrice>
+            <ItemName>{order.name}</ItemName>
+            <span>1</span>
+            <ItemPrice>{order.price && order.price.toLocaleString('ru-KZ', {
+                style: 'currency', currency: 'KZT', maximumFractionDigits: 0
+            })}</ItemPrice>
             <TrashButton />
         </OrderItemStyled>
     );

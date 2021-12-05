@@ -21,9 +21,9 @@ const Button = styled.button`
     }
 `;
 
-export const ButtonCheckout = ({children}) => {
+export const ButtonCheckout = ({children, onClick}) => {
     return (
-        <Button>
+        <Button onClick={onClick}>
             {children}
         </Button>
     );

@@ -35,6 +35,11 @@ const TotalPrice = styled.div`
     text-align: right;
 `;
 
+const EmpltyList = styled.p`
+    margin-top: 30px;
+    text-align: center;
+`;
+
 const Total = styled.div`
     margin-bottom: 30px;
     display: flex;
@@ -43,16 +48,16 @@ const Total = styled.div`
     }
 `;
 
-export const Order = ({openItem, setOpenItem}) => {
+export const Order = ({orders}) => {
     return (
         <OrderStyled>
             <OrderTitle>Order</OrderTitle>
             <OrderContent>
-                <OrderList>
-                    <OrderListItem />
-                    <OrderListItem />
-                    <OrderListItem />
-                </OrderList>
+                {orders.length > 0 ? (<OrderList>
+                    {orders.map((order, index) => <OrderListItem key={index} order={order} />)}
+                </OrderList>) : (
+                    <EmpltyList>No order yet</EmpltyList>
+                )}
             </OrderContent>
             <Total>
                 <span>Итого:</span>
