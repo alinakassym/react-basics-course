@@ -15,6 +15,8 @@ const NavBarStyled = styled.header`
     align-items: center;
     background-color: #299B01;
     color: #FFFFFF;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.2);
+    z-index: 3;
 `;
 
 const Logo = styled.div`

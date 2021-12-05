@@ -5,7 +5,8 @@ import { ListItem } from "./ListItem";
 
 const MenuStyled = styled.main`
     margin-top: 80px;
-    background-color: #CCCCCC;
+    padding-left: 380px;
+    background-color: #EEE;
 `;
 
 const Section = styled.section`

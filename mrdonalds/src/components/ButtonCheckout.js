@@ -21,8 +21,10 @@ const Button = styled.button`
     }
 `;
 
-export const ButtonCheckout = ({openItem, setOpenItem}) => {
+export const ButtonCheckout = ({children}) => {
     return (
-        <Button>Add</Button>
+        <Button>
+            {children}
+        </Button>
     );
 };
